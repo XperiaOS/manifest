@@ -2,11 +2,20 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-9.0.0_r21"
            remote="aosp"
+           sync-c="true"
            sync-j="4" />
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="xperia"
+           fetch="https://github.com/XperiaOS/"
+           revision="refs/heads/pie" />
+
 
   <project path="build/make" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -710,5 +719,8 @@
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
+
+  <!-- Track XperiaOS repos -->
+  <include name="snippets/xperia.xml" />
 
 </manifest>
