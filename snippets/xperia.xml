@@ -3,5 +3,23 @@
 
   <!-- XperiaOS -->
   <project path="manifest" name="manifest" remote="xperia" />
-
+  <project path="build/make" name="platform_build" remote="xperia" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="bionic" name="platform_bionic" remote="xperia"  />
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="xperia" />
+  <project path="build/kati" name="platform_build_kati" groups="pdk,tradefed" remote="xperia" />
+  <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed" remote="xperia" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="frameworks/base" name="platform_frameworks_base" remote="xperia" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="xperia" />
+  <project path="vendor/xperia" name="platform_vendor_xperia" remote="xperia" />
 </manifest>
