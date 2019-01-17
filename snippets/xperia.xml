@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote name="xperia"
+          fetch="https://github.com/XperiaOS"
+          revision="refs/heads/pie" />
+
   <!-- XperiaOS -->
   <project path="manifest" name="manifest" remote="xperia" />
   <project path="build/make" name="platform_build" remote="xperia" >

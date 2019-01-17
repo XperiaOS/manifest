@@ -12,14 +12,6 @@
   <remote  name="github"
            fetch="https://github.com/" />
 
-  <remote  name="los"
-           fetch="https://github.com/LineageOS/"
-           revision="refs/heads/lineage-16.0" />
-
-  <remote  name="xperia"
-           fetch="https://github.com/XperiaOS/"
-           revision="refs/heads/pie" />
-
   <project path="build/make" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -731,5 +723,8 @@
 
   <!-- Track hals from LineageOS -->
   <include name="snippets/lineage.xml" />
+
+  <!-- Track hals from FirangiOS -->
+  <include name="snippets/fi.xml" />
 
 </manifest>
