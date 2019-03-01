@@ -4,7 +4,10 @@
   <remote name="los"
           fetch="https://github.com/LineageOS"
           revision="refs/heads/lineage-16.0" />
-		  
+
+  <!-- External -->
+  <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="los" revision="lineage-16.0" />
+
   <!-- Frameworks -->
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="los" revision="lineage-16.0" />
 
