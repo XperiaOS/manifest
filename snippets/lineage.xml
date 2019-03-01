@@ -8,9 +8,6 @@
   <!-- External -->
   <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="los" revision="lineage-16.0" />
 
-  <!-- Frameworks -->
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="los" revision="lineage-16.0" />
-
   <!-- Hardware -->
   <project path="hardware/qcom/bootctrl" name="android_hardware_qcom_bootctrl" remote="los" revision="lineage-16.0" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="los" revision="lineage-16.0" />
