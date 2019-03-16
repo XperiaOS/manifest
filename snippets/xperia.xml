@@ -27,6 +27,8 @@
   <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="xperia" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="xperia" />
   <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="xperia" />
+  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="xperia" />
+  <project path="packages/apps/Nfc" name="platform_packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="xperia" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="xperia" />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="xperia" />
   <project path="hardware/qcom/wlan-caf" name="platform_hardware_qcom_wlan-caf" remote="xperia" />
